@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "415f89dd3c05f5b7a9a0",
+    "revision": "8f1b419aed37651d4f31",
     "url": "/solid-client/css/app.ba014d55.css"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/solid-client/img/logo.82b9c7a5.png"
   },
   {
-    "revision": "a5d851c027e6048f3445b6ff11e33718",
+    "revision": "df00b2d9642af0faabbe6fe247e9b20e",
     "url": "/solid-client/index.html"
   },
   {
@@ -20,20 +20,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/solid-client/js/about.dc6ea151.js"
   },
   {
-    "revision": "415f89dd3c05f5b7a9a0",
-    "url": "/solid-client/js/app.da976a4f.js"
+    "revision": "8f1b419aed37651d4f31",
+    "url": "/solid-client/js/app.f3a61160.js"
   },
   {
     "revision": "5d41b3c5aff94ee4c7a8",
     "url": "/solid-client/js/chunk-vendors.29e77570.js"
   },
   {
-    "revision": "b3fd580dfaf3414a7d24",
-    "url": "/solid-client/js/config.a4a402df.js"
+    "revision": "a53540a12db628b0d08b",
+    "url": "/solid-client/js/config.4bebdde9.js"
   },
   {
-    "revision": "daa2f774c7bba8636690",
-    "url": "/solid-client/js/text.bfd57d13.js"
+    "revision": "975257280a6a62dc16d6",
+    "url": "/solid-client/js/text.63149299.js"
   },
   {
     "revision": "0c2e93899dbc7e8df8f800544add302f",
