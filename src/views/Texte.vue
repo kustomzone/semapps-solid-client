@@ -21,7 +21,7 @@
 //import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: 'Text',
+  name: 'Texte',
   components: {
     //  HelloWorld
   },
