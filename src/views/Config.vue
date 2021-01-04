@@ -2,7 +2,7 @@
   <div class="container">
     Config
     <b-input-group size="lg" prepend="Server">
-      <b-form-input v-model="server"></b-form-input>
+      <b-form-input v-model="server" @change="serverChanged"></b-form-input>
     </b-input-group>
   </div>
 </template>
@@ -18,9 +18,14 @@ export default {
 },
 data: function () {
    return {
-     server: 'http://localhost:5000'
+     server: 'http://localhost:5000/'
    }
  },
+ methods: {
+   serverChanged() {
+     this.$store.commit('setServer', this.server)
+   }
+ }
 
 }
 </script>

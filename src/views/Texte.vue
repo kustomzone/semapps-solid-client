@@ -33,9 +33,26 @@ export default {
   },
   methods: {
     send() {
-      console.log(this.text, this.path)
+      console.log(this.text, this.path, this.server)
+    //  let content = document.getElementById('content').value
+      //let filename = document.getElementById('filename').value
+    //  console.log(content, filename)
+      fetch(this.server+this.path, {
+        headers: {"Content-type": "text/plain; charset=UTF-8"},
+        method: 'PUT',
+        body: this.text
+      })
+      .then(response => console.log(response))
+      .catch((error) => {
+        console.error('Error:', error);
+      });
     }
-  }
+  },
+  computed:{
+   server(){
+     return this.$store.state.server
+   },
+ }
 
 }
 </script>
