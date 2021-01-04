@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2e7bb89d58de403b20e",
+    "revision": "415f89dd3c05f5b7a9a0",
     "url": "/solid-client/css/app.ba014d55.css"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/solid-client/img/logo.82b9c7a5.png"
   },
   {
-    "revision": "e854a089fe6c91ac8a174c73dabb1e0d",
+    "revision": "22ea528541046f090f2b091654141d6d",
     "url": "/solid-client/index.html"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/solid-client/js/about.dc6ea151.js"
   },
   {
-    "revision": "e2e7bb89d58de403b20e",
-    "url": "/solid-client/js/app.eaaa3ec2.js"
+    "revision": "415f89dd3c05f5b7a9a0",
+    "url": "/solid-client/js/app.da976a4f.js"
   },
   {
     "revision": "5d41b3c5aff94ee4c7a8",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/solid-client/js/config.a4a402df.js"
   },
   {
-    "revision": "cb2d88427b29791d66c1",
-    "url": "/solid-client/js/text.6db2bb32.js"
+    "revision": "daa2f774c7bba8636690",
+    "url": "/solid-client/js/text.bfd57d13.js"
   },
   {
     "revision": "4a2d40c0ae1894a57b1448071d9d904c",
