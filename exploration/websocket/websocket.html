@@ -1,0 +1,58 @@
+<html>
+<!-- websocket test for https://gitlab.com/solidweb.org/support/-/issues/4 -->
+<script>
+
+  var socket = new WebSocket('wss://spoggy.solidweb.org/', ['solid.0.1.0']);
+  console.log("solidweb socket", socket)
+  socket.onopen = function() {
+    this.send('sub https://spoggy.solidweb.org/public/websocket/test.txt');
+    console.log("solidweb socket",socket)
+  };
+
+  var socket2 = new WebSocket('wss://spoggy-test7.solidcommunity.net/', ['solid.0.1.0']);
+  console.log("solidcommunity socket", socket2)
+  socket2.onopen = function() {
+    this.send('sub https://spoggy-test7.solidcommunity.net/public/websocket/test.txt');
+    console.log("solidcommunity socket", socket2)
+  };
+
+  var socket3 = new WebSocket('wss://spoggy.solidcommunity.net:8443', ['solid.0.1.0']);
+  console.log("solidcommunity socket 8443 ", socket3)
+  socket3.onopen = function() {
+    this.send('sub spoggy.solidcommunity.net:8443/public/websocket/test.txt');
+    console.log("solidcommunity socket 8443", socket3)
+  };
+
+
+  socket.onmessage = function(msg) {
+    if (msg.data && msg.data.slice(0, 3) === 'pub') {
+      console.log("solidweb",msg)
+        display(msg)
+    }
+  };
+
+  socket2.onmessage = function(msg) {
+    if (msg.data && msg.data.slice(0, 3) === 'pub') {
+      console.log("community.net",msg)
+        display(msg)
+    }
+  };
+
+  socket3.onmessage = function(msg) {
+    if (msg.data && msg.data.slice(0, 3) === 'pub') {
+      console.log("community.net:8443",msg)
+      display(msg)
+    }
+  };
+
+  function display(msg){
+    let url = msg.data.substring(4, msg.data.length)
+    console.log(url)
+    fetch(url)
+   .then( r => r.text() )
+   .then( t => console.log(t) )
+  }
+
+</script>
+
+</html>
